@@ -4,8 +4,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-[calc(100vh-82px)] flex items-center justify-center text-white"
+      className="scroll-mt-[82px] min-h-[calc(100vh-82px)] text-white flex justify-center pt-28 pb-16"
     >
+
+      {/* ---Avatar--- */}
       <div className="w-full max-w-5xl px-4 flex flex-col items-center text-center">
         <div className="w-32 h-32 rounded-full bg-linear-to-b from-[#FF8660] to-[#9A33FF] p-1 mb-8">
           <div className="w-full h-full rounded-full bg-[#111111] flex items-center justify-center ">
@@ -30,6 +32,8 @@ const Home = () => {
         <p className="max-w-2xl text-sm sm:text-base text-[#C5C5C5] mb-8">
           I am passionate...
         </p>
+
+        {/* ---Download Button--- */}
 
         <a
           href="/Dinh_Ethan_Resume.pdf"

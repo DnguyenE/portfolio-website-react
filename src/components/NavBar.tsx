@@ -27,7 +27,7 @@ const NavBar = () => {
       <div className="flex items-center gap-50 text-white font-medium">
         {/* ----LeftSide---- */}
 
-        <div className="text-2xl font-bold tracking-wide">Insert Logo</div>
+        <div className="text-2xl font-bold tracking-wide">Ethan Dinh</div>
 
         {/* ----Center---- */}
         {/* ----RightSide---- */}
