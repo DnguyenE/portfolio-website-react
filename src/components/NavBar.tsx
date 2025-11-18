@@ -47,19 +47,29 @@ const NavBar = () => {
           : "opacity-0 -translate-y-6 pointer-events-none"
       }`}
     >
-      <div className="h-full px-10 flex items-center justify-between text-white font-medium gap-12">
+      <div className="h-full px-10 flex items-center text-white font-medium gap-12">
         {/* ----LeftSide---- */}
 
-        <div className="text-2xl font-bold tracking-wide">Ethan Dinh</div>
+        <button
+          key={"home"}
+          className="text-2xl font-bold tracking-wide shrink-0 cursor-pointer bg-linear-to-r from-[#FF8660] to-[#9A33FF] bg-clip-text text-transparent"
+          onClick={() => {
+            document
+              .getElementById("home")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Ethan Dinh
+        </button>
 
         {/* ----Center---- */}
 
-        <div className="flex items-center gap-8">
+        <div className="flex-1 flex items-center justify-center gap-8">
           {pages.map((page) => {
             return (
               <button
                 key={page.id}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-[#FF8660]"
                 onClick={() =>
                   document
                     .getElementById(page.id)
@@ -74,10 +84,10 @@ const NavBar = () => {
 
         {/* ----RightSide---- */}
 
-        <div>
+        <div className="shrink-0">
           <button
             key={"contact"}
-            className="cursor-pointer"
+            className="px-4 py-2 rounded-full bg-linear-to-r from-[#FF8660] to-[#9A33FF] text-white font-semibold shadow-md cursor-pointer transition hover:scale-[1.02]"
             onClick={() => {
               document
                 .getElementById("contact")
