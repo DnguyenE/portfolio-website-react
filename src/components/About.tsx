@@ -1,9 +1,3 @@
-import { FaJava, FaReact } from "react-icons/fa";
-import {
-  TbBrandJavascript,
-  TbBrandTypescript,
-  TbBrandVite,
-} from "react-icons/tb";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/home-pic.png";
 
