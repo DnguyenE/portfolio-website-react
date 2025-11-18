@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/home-pic.png";
 
 const Home = () => {
@@ -6,7 +7,6 @@ const Home = () => {
       id="home"
       className="scroll-mt-[82px] min-h-[calc(100vh-82px)] text-white flex justify-center pt-28 pb-16"
     >
-
       {/* ---Avatar--- */}
       <div className="w-full max-w-5xl px-4 flex flex-col items-center text-center">
         <div className="w-32 h-32 rounded-full bg-linear-to-b from-[#FF8660] to-[#9A33FF] p-1 mb-8">
@@ -42,6 +42,24 @@ const Home = () => {
         >
           Download Resume
         </a>
+        <div className="flex gap-4 mt-4 text-4xl text-white/60 font-semibold cursor-pointer">
+          <a
+            className="hover:text-white"
+            href="https://github.com/DnguyenE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className="hover:text-white"
+            href="https://www.linkedin.com/in/ethan-dinh-8a4072327/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
     </section>
   );
