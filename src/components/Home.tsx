@@ -23,7 +23,7 @@ const Home = () => {
             Ethan Dinh
           </p>
           <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-            Computer Engineering Student Fueled by Curiousity and Constant Growth
+            Computer Engineering Student Fueled by Curiousity and Making Ideas Reality
           </p>
         </div>
 

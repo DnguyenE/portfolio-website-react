@@ -16,11 +16,6 @@ const pages = [
     title: "Projects",
     href: "/projects",
   },
-  {
-    id: "contact",
-    title: "Contact Me",
-    href: "/contact",
-  },
 ];
 
 const NavBar = () => {
@@ -45,14 +40,19 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 z-50 w-full h-[82px] bg-[#222222] shadow flex items-center justify-center transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full pointer-events-none"}`}>
-      <div className="flex items-center gap-50 text-white font-medium">
+    <div
+      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[min(1100px,calc(100%-2rem))] h-[72px] rounded-full border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg transition-all duration-300 ${
+        visible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-6 pointer-events-none"
+      }`}
+    >
+      <div className="h-full px-10 flex items-center justify-between text-white font-medium gap-12">
         {/* ----LeftSide---- */}
 
         <div className="text-2xl font-bold tracking-wide">Ethan Dinh</div>
 
         {/* ----Center---- */}
-        {/* ----RightSide---- */}
 
         <div className="flex items-center gap-8">
           {pages.map((page) => {
@@ -70,6 +70,22 @@ const NavBar = () => {
               </button>
             );
           })}
+        </div>
+
+        {/* ----RightSide---- */}
+
+        <div>
+          <button
+            key={"contact"}
+            className="cursor-pointer"
+            onClick={() => {
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>
