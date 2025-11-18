@@ -12,7 +12,7 @@ function App() {
       <NavBar />
 
       {/* -------Main Content------ */}
-      <main className="pt-[82px] bg-[#161513]">
+      <main className="bg-[#161513]">
         <Home />
         <About />
         <Projects />
