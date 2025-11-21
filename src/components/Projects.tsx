@@ -55,8 +55,8 @@ const Projects = () => {
         <h2 className="text-xl sm:text-3xl font-extrabold leading-tight mb-3">
           Projects
         </h2>
-        <div>
-          <ProjectCard title="tester" description="testing desc" image="/src/assets/todo-app.png" demo="" code=""/>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ProjectCard title="To-Do App in React" description="testing desc" image="/src/assets/todo-app.png" demo="" code=""/>
         </div>
       </div>
     </section>
