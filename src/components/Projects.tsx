@@ -17,11 +17,11 @@ const languages = [
   { name: "Vite", Icon: SiVite },
 ];
 
-const projects = [
-  { name: "Todo-App" },
-  { name: "Greenhouse" },
-  { name: "Flashcard" },
-];
+// const projects = [
+//   { name: "Todo-App" },
+//   { name: "Greenhouse" },
+//   { name: "Flashcard" },
+// ];
 
 const Projects = () => {
   return (
