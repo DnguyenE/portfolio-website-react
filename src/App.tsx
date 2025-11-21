@@ -1,4 +1,4 @@
-import About from "./components/About";
+import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
@@ -14,7 +14,7 @@ function App() {
       {/* -------Main Content------ */}
       <main className="bg-[#161513]">
         <Home />
-        <About />
+        <TechStack />
         <Projects />
         <Contact />
       </main>

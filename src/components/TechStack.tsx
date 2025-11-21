@@ -1,10 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/home-pic.png";
 
-const About = () => {
+const TechStack = () => {
   return (
     <section
-      id="about"
+      id="techstack"
       className="min-h-screen flex flex-col items-center justify-center text-white"
     >
       {/* ---Avatar--- */}
@@ -26,7 +26,7 @@ const About = () => {
           <span className="bg-linear-to-r from-[#FF8660] to-[#9A33FF] bg-clip-text text-transparent">
             Computer Engineering
           </span>{" "}
-          Student <br /> at Lassonde School of Engineering
+          Student
         </h1>
 
         <p className="max-w-2xl text-sm sm:text-base text-[#C5C5C5] mb-8">
@@ -65,4 +65,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default TechStack;

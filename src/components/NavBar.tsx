@@ -7,9 +7,9 @@ const pages = [
     href: "/",
   },
   {
-    id: "about",
+    id: "techstack",
     title: "About Me",
-    href: "/about",
+    href: "/techstack",
   },
   {
     id: "projects",
