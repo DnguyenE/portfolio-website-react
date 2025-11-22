@@ -14,12 +14,12 @@ const ProjectCard = ({
   code,
 }: ProjectCardProps) => (
   <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-4 shadow-lg">
-    <div className="overflow-hidden roudned-xl mb-4 aspect-video bg-[#0f0f0f]">
+    <div className="overflow-hidden rounded-xl mb-4 aspect-video bg-[#0f0f0f]">
       <img src={image} alt={title} className="h-full w-full object-cover" />
     </div>
     <h3 className="text-xl font-semibold text-white">{title}</h3>
-    <p className="text-sm text-whtie/70 mt-2">{description}</p>
-    <div className="mt-4 gap-3 flex">
+    <p className="text-sm text-white/70 mt-2">{description}</p>
+    <div className="mt-4 gap-3 flex items-center justify-center">
       <a
         className="px-4 py-2 rounded-full bg-linear-to-r from-[#FF8660] to-[#9A33FF] text-white text-sm font-semibold hover:scale-[1.02] transition cursor-pointer"
         href={demo}
