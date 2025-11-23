@@ -2,8 +2,8 @@ type ProjectCardProps = {
   title: string;
   description: string;
   image: string;
-  demo: string;
-  code: string;
+  demo?: string;
+  code?: string;
 };
 
 const ProjectCard = ({
@@ -20,22 +20,26 @@ const ProjectCard = ({
     <h3 className="text-xl font-semibold text-white">{title}</h3>
     <p className="text-sm text-white/70 mt-2 max-w-xl">{description}</p>
     <div className="mt-4 gap-3 flex items-center justify-center">
-      <a
-        className="px-4 py-2 rounded-full bg-linear-to-r from-[#FF8660] to-[#9A33FF] text-white text-sm font-semibold hover:scale-[1.02] transition cursor-pointer"
-        href={demo}
-        target="_blank"
-        rel="noreferrer"
-      >
-        View Live
-      </a>
-      <a
-        className="px-4 py-2 rounded-full border border-white/40 text-white text-sm font-semibold hover:bg-white hover:text-black transition cursor-pointer"
-        href={code}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Source
-      </a>
+      {demo && (
+        <a
+          className="px-4 py-2 rounded-full bg-linear-to-r from-[#FF8660] to-[#9A33FF] text-white text-sm font-semibold hover:scale-[1.02] transition cursor-pointer"
+          href={demo}
+          target="_blank"
+          rel="noreferrer"
+        >
+          View Live
+        </a>
+      )}
+      {code && (
+        <a
+          className="px-4 py-2 rounded-full border border-white/40 text-white text-sm font-semibold hover:bg-white hover:text-black transition cursor-pointer"
+          href={code}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source
+        </a>
+      )}
     </div>
   </div>
 );

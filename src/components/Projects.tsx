@@ -29,7 +29,6 @@ const projects = [
     title: "Portfolio Website",
     description: "A friendly portfolio to display my experience",
     image: "/src/assets/portfolio-pic.png",
-    demo: "https://ethan-dinh-portfolio.vercel.app",
     code: "https://github.com/DnguyenE/portfolio-website-react",
   },
   {
