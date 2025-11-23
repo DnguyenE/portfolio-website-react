@@ -20,21 +20,21 @@ const languages = [
 const projects = [
   {
     title: "To-Do App in React",
-    desciprtion: "Simple yet effective To-Do list app",
+    description: "A simple yet efficient To-Do List app to track tasks",
     image: "/src/assets/todo-app.png",
     demo: "https://dnguyene-todo.vercel.app",
     code: "https://github.com/DnguyenE/todo-app-react",
   },
   {
     title: "Portfolio Website",
-    desciprtion: "A friendly portfolio to display my experience",
+    description: "A friendly portfolio to display my experience",
     image: "/src/assets/portfolio-pic.png",
     demo: "https://ethan-dinh-portfolio.vercel.app",
     code: "https://github.com/DnguyenE/portfolio-website-react",
   },
   {
     title: "Real-Time Dashboard",
-    desciprtion: "A dashboard that updates based on simulated data",
+    description: "A dashboard that updates based on simulated data",
     image: "/src/assets/react-ecoboard-pic.png",
     demo: "https://react-ecoboard.vercel.app",
     code: "https://github.com/DnguyenE/react-ecoboard",
@@ -78,7 +78,7 @@ const Projects = () => {
             {projects.map((project) => (
               <ProjectCard
                 title={project.title}
-                description={project.desciprtion}
+                description={project.description}
                 image={project.image}
                 code={project.code}
                 demo={project.demo}

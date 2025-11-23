@@ -18,7 +18,7 @@ const ProjectCard = ({
       <img src={image} alt={title} className="h-full w-full object-cover" />
     </div>
     <h3 className="text-xl font-semibold text-white">{title}</h3>
-    <p className="text-sm text-white/70 mt-2">{description}</p>
+    <p className="text-sm text-white/70 mt-2 max-w-xl">{description}</p>
     <div className="mt-4 gap-3 flex items-center justify-center">
       <a
         className="px-4 py-2 rounded-full bg-linear-to-r from-[#FF8660] to-[#9A33FF] text-white text-sm font-semibold hover:scale-[1.02] transition cursor-pointer"
