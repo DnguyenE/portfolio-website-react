@@ -7,6 +7,9 @@ import {
   SiVite,
 } from "react-icons/si";
 import ProjectCard from "./ProjectCard";
+import todoImg from "../assets/todo-app.png";
+import portfolioImg from "../assets/portfolio-pic.png";
+import ecoboardImg from "../assets/react-ecoboard-pic.png";
 
 const languages = [
   { name: "JavaScript", Icon: SiJavascript },
@@ -21,20 +24,20 @@ const projects = [
   {
     title: "To-Do App in React",
     description: "A simple yet efficient To-Do List app to track tasks",
-    image: "/src/assets/todo-app.png",
+    image: todoImg,
     demo: "https://dnguyene-todo.vercel.app",
     code: "https://github.com/DnguyenE/todo-app-react",
   },
   {
     title: "Portfolio Website",
     description: "A friendly portfolio to display my experience",
-    image: "/src/assets/portfolio-pic.png",
+    image: portfolioImg,
     code: "https://github.com/DnguyenE/portfolio-website-react",
   },
   {
     title: "Real-Time Dashboard",
     description: "A dashboard that updates based on simulated data",
-    image: "/src/assets/react-ecoboard-pic.png",
+    image: ecoboardImg,
     demo: "https://react-ecoboard.vercel.app",
     code: "https://github.com/DnguyenE/react-ecoboard",
   },
@@ -76,6 +79,7 @@ const Projects = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <ProjectCard
+                key={project.title}
                 title={project.title}
                 description={project.description}
                 image={project.image}
