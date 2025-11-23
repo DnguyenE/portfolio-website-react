@@ -27,17 +27,17 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    desciprtion: "A friendly portfolio to display my work",
+    desciprtion: "A friendly portfolio to display my experience",
     image: "/src/assets/portfolio-pic.png",
     demo: "https://ethan-dinh-portfolio.vercel.app",
     code: "https://github.com/DnguyenE/portfolio-website-react",
   },
   {
-    title: "To-Do App in React",
-    desciprtion: "testing desc",
-    image: "/src/assets/todo-app.png",
-    demo: "",
-    code: "",
+    title: "Real-Time Dashboard",
+    desciprtion: "A dashboard that updates based on simulated data",
+    image: "/src/assets/react-ecoboard-pic.png",
+    demo: "https://react-ecoboard.vercel.app",
+    code: "https://github.com/DnguyenE/react-ecoboard",
   },
 ];
 

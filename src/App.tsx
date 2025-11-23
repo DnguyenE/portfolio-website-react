@@ -1,9 +1,9 @@
 import TechStack from "./components/TechStack";
-import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
         <Home />
         <TechStack />
         <Projects />
-        <Contact />
+        <Footer />
       </main>
     </div>
   );
