@@ -6,6 +6,7 @@ import {
   SiReact,
   SiVite,
 } from "react-icons/si";
+import { TbBrandGolang } from "react-icons/tb";
 import ProjectCard from "./ProjectCard";
 import todoImg from "../assets/todo-app.png";
 import portfolioImg from "../assets/portfolio-pic.png";
@@ -18,6 +19,7 @@ const languages = [
   { name: "C++", Icon: SiCplusplus },
   { name: "React", Icon: SiReact },
   { name: "Vite", Icon: SiVite },
+  { name: "Go", Icon: TbBrandGolang },
 ];
 
 const projects = [
@@ -56,7 +58,7 @@ const Projects = () => {
             Technical Languages
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mb-15">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-8 mb-15">
             {languages.map(({ name, Icon }) => (
               <div
                 key={name}
