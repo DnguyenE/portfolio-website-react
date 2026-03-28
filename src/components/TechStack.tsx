@@ -30,7 +30,9 @@ const TechStack = () => {
         </h1>
 
         <p className="max-w-2xl text-sm sm:text-base text-[#C5C5C5] mb-8">
-          My passion to translate ideas to code is what drives me to build meaningful solutions
+          I focus on hardware–software integration, analytical problem-solving, and collaborative
+          delivery—grounded in an open, resilient outlook from growing up in Toronto&apos;s
+          diverse environment.
         </p>
 
         {/* ---Download Button--- */}

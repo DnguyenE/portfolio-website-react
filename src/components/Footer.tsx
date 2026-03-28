@@ -34,8 +34,9 @@ const Footer = () => {
               Ethan Dinh
             </p>
             <p className="text-white/60 max-w-xl text-sm">
-              Open to collaborations, internships, and new opportunities. Drop a
-              line and I'll get back to you.
+              Open to roles and projects where I can learn from experienced
+              engineers, mentors, and teammates—internships, collaboration, or
+              anything that stretches what I know. Reach out and I&apos;ll reply.
             </p>
           </div>
 
