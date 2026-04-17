@@ -62,6 +62,24 @@ const TechStack = () => {
             <FaLinkedin />
           </a>
         </div>
+
+        {/* ---Intro Video--- */}
+        <div className="w-full max-w-3xl mt-12">
+          <div className="rounded-2xl bg-linear-to-b from-[#FF8660] to-[#9A33FF] p-[2px] shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+            <div className="rounded-2xl bg-[#111111] overflow-hidden">
+              <video
+                className="w-full h-auto block"
+                controls
+                playsInline
+                preload="metadata"
+                poster="/videos/intro-poster.png"
+                src="/videos/intro.mp4"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
